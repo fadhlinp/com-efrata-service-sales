@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Com.Danliris.Service.Sales.Lib", "Com.Danliris.Service.Sales.Lib\Com.Danliris.Service.Sales.Lib.csproj", "{891F27EA-B1B7-43A7-A75C-4B709BBB3811}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Com.Danliris.Service.Sales.WebApi", "Com.Danliris.Service.Sales.WebApi\Com.Danliris.Service.Sales.WebApi.csproj", "{05D6FFA2-22A5-4A84-9ECC-4C630CACFF81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Com.Danliris.Sales.Test", "Com.Danliris.Sales.Test\Com.Danliris.Sales.Test.csproj", "{FE0C17EA-33A4-42DD-A794-72CCBEC113E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{429AFBA7-FA22-4251-B40B-95DD72B73A5B}"
+	ProjectSection(SolutionItems) = preProject
+		.codecov.yml = .codecov.yml
+		.travis.yml = .travis.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{891F27EA-B1B7-43A7-A75C-4B709BBB3811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891F27EA-B1B7-43A7-A75C-4B709BBB3811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891F27EA-B1B7-43A7-A75C-4B709BBB3811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891F27EA-B1B7-43A7-A75C-4B709BBB3811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D6FFA2-22A5-4A84-9ECC-4C630CACFF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D6FFA2-22A5-4A84-9ECC-4C630CACFF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D6FFA2-22A5-4A84-9ECC-4C630CACFF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D6FFA2-22A5-4A84-9ECC-4C630CACFF81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE0C17EA-33A4-42DD-A794-72CCBEC113E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0C17EA-33A4-42DD-A794-72CCBEC113E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0C17EA-33A4-42DD-A794-72CCBEC113E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0C17EA-33A4-42DD-A794-72CCBEC113E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC5C1AD2-164A-4874-AEA8-FA2E0A6502B9}
+	EndGlobalSection
+EndGlobal
