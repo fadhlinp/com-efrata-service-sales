@@ -33,7 +33,8 @@ namespace Com.Danliris.Service.Sales.Lib.PDFTemplates
 
             #region Header
 
-            string codeNoString = "FM-PU-27-01";
+            /* string codeNoString = "FM-PU-27-01"; */
+            string codeNoString = " ";
             Paragraph codeNo = new Paragraph(codeNoString, bold_font) { Alignment = Element.ALIGN_RIGHT };
             codeNo.SpacingAfter = 10f;
             document.Add(codeNo);
@@ -598,21 +599,21 @@ namespace Com.Danliris.Service.Sales.Lib.PDFTemplates
             string[] branchOffices = {
                 "Jl. CBD SELATAN RUKO PMP TEMATIK P/30",
                 "CURUG SANGERANG, KELAPA DUA, TANGERANG",
-                "TELP. : (+62 21) 29009777", 
+                "TELP. (+62 21) 29009777", 
             };
 
             for (int i = 0; i < branchOffices.Length; i++)
             {
-                cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, branchOffices[i], marginLeft, branchOfficeY - 10 - (i * 8), 0);
+                cb.ShowTextAligned(PdfContentByte.ALIGN_LEFT, branchOffices[i], marginLeft, branchOfficeY - 10 - (i * 10), 0);
             }
 
             #endregion
 
             #region CENTER
 
-            var headOfficeX = width / 2 + 30;
-            var headOfficeY = height - marginTop + 45;
-
+            /*var headOfficeX = width / 2 + 30;
+            var headOfficeY = height - marginTop + 45;*/
+            
             byte[] imageByte = Convert.FromBase64String(Base64ImageStrings.LOGO_NAME);
             Image image = Image.GetInstance(imageByte);
             if (image.Width > 160)
@@ -621,17 +622,18 @@ namespace Com.Danliris.Service.Sales.Lib.PDFTemplates
                 percentage = 160 / image.Width;
                 image.ScalePercent(percentage * 100);
             }
-            image.SetAbsolutePosition(headOfficeX - (image.ScaledWidth / 2), headOfficeY);
-            cb.AddImage(image, inlineImage: true);
 
-            string[] headOffices = {
+            //image.SetAbsolutePosition(headOfficeX - (image.ScaledWidth / 2), headOfficeY);
+            //cb.AddImage(image, inlineImage: true);
+
+            /* string[] headOffices = {
                 "Head Office : KEL. BANARAN, KEC. GROGOL, KAB. SUKOHARJO, JAWA TENGAH - INDONESIA",
-                "TELP. (+62 271) 719911, FAX. : (+62 271) 719911, ",
+                "TELP. (+62 271) 719911, FAX. : (+62 271) 719911 ",
             };
             for (int i = 0; i < headOffices.Length; i++)
             {
-                cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, headOffices[i], headOfficeX, headOfficeY - image.ScaledHeight - (i * 10), 0);
-            }
+                cb.ShowTextAligned(PdfContentByte.ALIGN_RIGHT, headOffices[i], headOfficeX, headOfficeY - image.ScaledHeight - (i * 10), 0);
+            }*/
 
             #endregion
 
@@ -646,9 +648,24 @@ namespace Com.Danliris.Service.Sales.Lib.PDFTemplates
                 imageIso.ScalePercent(percentage * 100);
             }
             imageIso.SetAbsolutePosition(width - imageIso.ScaledWidth - marginRight, height - imageIso.ScaledHeight - marginTop + 60);
-            cb.AddImage(imageIso, inlineImage: true);
-            cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "CERTIFICATE ID09 / 01238", width - (imageIso.ScaledWidth / 2) - marginRight, height - imageIso.ScaledHeight - marginTop + 60 - 5, 0);
+            //cb.AddImage(imageIso, inlineImage: true);
+            //cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "CERTIFICATE ID09 / 01238", width - (imageIso.ScaledWidth / 2) - marginRight, height - imageIso.ScaledHeight - marginTop + 60 - 5, 0);
 
+            //set head office address to right
+            //var headOfficeX = width / 2;
+            var headOfficeY = height - marginTop + 65;
+            //cb.ShowTextAligned(PdfContentByte.ALIGN_RIGHT, "HEAD OFFICE :", marginRight, headOfficeY, 0);
+            string[] headOffice = {
+                "HEAD OFFICE :",
+                "KEL. BANARAN, KEC. GROGOL, KAB. SUKOHARJO",
+                "JAWA TENGAH - INDONESIA",
+                "TELP. (+62 271) 719911, FAX. (+62 271) 719911",
+            };
+
+            for (int i = 0; i < headOffice.Length; i++)
+            {
+                cb.ShowTextAligned(PdfContentByte.ALIGN_RIGHT, headOffice[i], width - marginRight, headOfficeY - image.ScaledHeight - (i * 10), 0);
+            }
             #endregion
 
             #region LINE
@@ -665,10 +682,10 @@ namespace Com.Danliris.Service.Sales.Lib.PDFTemplates
             Image imageCenter = Image.GetInstance(imageByteCenter);
             float percentageImageCenter = 0.0f;
             percentageImageCenter = 400 / imageCenter.Width;
-            imageCenter.ScalePercent(percentageImageCenter * 100);
+            /* imageCenter.ScalePercent(percentageImageCenter * 100);
             imageCenter.SetAbsolutePosition((width / 2) - imageCenter.ScaledWidth / 2, (height / 2) - imageCenter.ScaledHeight / 2);
             //cb.AddImage(imageCenter);
-            document.Add(imageCenter);
+            document.Add(imageCenter); */
 
             #endregion
 
