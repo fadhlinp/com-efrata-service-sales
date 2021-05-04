@@ -44,7 +44,7 @@ namespace Com.Danliris.Service.Sales.Lib
             cellHeaderBody.Phrase = new Phrase("BAGIAN PENJUALAN BENANG", header_font);
             headerTable1.AddCell(cellHeaderBody);
 
-            cellHeaderBody.Phrase = new Phrase("PT. DANLIRIS - SUKOHARJO", header_font);
+            cellHeaderBody.Phrase = new Phrase("PT. EFRATA RETAILINDO", header_font);
             headerTable1.AddCell(cellHeaderBody);
 
             cellHeaderBody.Phrase = new Phrase("", header_font);
@@ -119,7 +119,7 @@ namespace Com.Danliris.Service.Sales.Lib
             headerTable2.AddCell(cellHeaderBody);
             
             cellHeaderBody.HorizontalAlignment = Element.ALIGN_LEFT;
-            cellHeaderBody.Phrase = new Phrase("PT. Danliris", normal_font);
+            cellHeaderBody.Phrase = new Phrase("PT. EFRATA RETAILINDO", normal_font);
             headerTable2.AddCell(cellHeaderBody);
             
             cellHeaderBody.HorizontalAlignment = Element.ALIGN_LEFT;

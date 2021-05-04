@@ -504,7 +504,7 @@ namespace Com.Danliris.Service.Sales.Lib.PDFTemplates
 
             cell_signature.Phrase = new Phrase("Bag. Penjualan", normal_font);
             table_signature.AddCell(cell_signature);
-            cell_signature.Phrase = new Phrase("Ka. Sie/Ka. Bag Penjualan", normal_font);
+            cell_signature.Phrase = new Phrase("Ka. Sie Penjualan", normal_font);
             table_signature.AddCell(cell_signature);
             /* cell_signature.Phrase = new Phrase("Ka. Div Penjualan", normal_font);
             table_signature.AddCell(cell_signature); */
