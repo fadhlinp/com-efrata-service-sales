@@ -45,7 +45,7 @@ namespace Com.Danliris.Service.Sales.Lib.PDFTemplates
             PdfPCell cellHeaderBody2 = new PdfPCell() { Border = Rectangle.NO_BORDER };
             PdfPCell cellHeaderCS2 = new PdfPCell() { Border = Rectangle.NO_BORDER, Colspan = 2, HorizontalAlignment = Element.ALIGN_CENTER };
 
-            cellHeaderBody.Phrase = new Phrase("PT. DAN LIRIS", Title_bold_font);
+            cellHeaderBody.Phrase = new Phrase("PT. EFRATA RETAILINDO", Title_bold_font);
             headerTable1.AddCell(cellHeaderBody);
             cellHeaderBody.Phrase = new Phrase("Head Office : Jl. Merapi No. 23 Banaran, Grogol", normal_font);
             headerTable1.AddCell(cellHeaderBody);
@@ -53,20 +53,26 @@ namespace Com.Danliris.Service.Sales.Lib.PDFTemplates
             headerTable1.AddCell(cellHeaderBody);
             cellHeaderBody.Phrase = new Phrase("", normal_font);
             headerTable1.AddCell(cellHeaderBody);
-            cellHeaderBody.Phrase = new Phrase("Telp  :(+62 271) 740888, 714400", normal_font);
+            cellHeaderBody.Phrase = new Phrase("TELP. (+62 271) 719911", normal_font);
             headerTable1.AddCell(cellHeaderBody);
-            cellHeaderBody.Phrase = new Phrase("Fax  :(+62 271) 740777, 735222", normal_font);
+            cellHeaderBody.Phrase = new Phrase("FAX. : (+62 271) 719911", normal_font);
             headerTable1.AddCell(cellHeaderBody);
-            cellHeaderBody.Phrase = new Phrase("PO BOX 116 Solo, 57100", normal_font);
+            /* cellHeaderBody.Phrase = new Phrase("PO BOX 116 Solo, 57100", normal_font);
             headerTable1.AddCell(cellHeaderBody);
             cellHeaderBody.Phrase = new Phrase("Web: www.danliris.com", normal_font);
+            headerTable1.AddCell(cellHeaderBody); */
+            cellHeaderBody.Phrase = new Phrase("", normal_font);
+            headerTable1.AddCell(cellHeaderBody);
+            cellHeaderBody.Phrase = new Phrase("", normal_font);
             headerTable1.AddCell(cellHeaderBody);
 
             cellHeader1.AddElement(headerTable1);
             headerTable.AddCell(cellHeader1);
 
             cellHeaderBody2.HorizontalAlignment = Element.ALIGN_RIGHT;
-            cellHeaderBody2.Phrase = new Phrase("FM-PJ-00-03-008", bold_font);
+            /* cellHeaderBody2.Phrase = new Phrase("FM-PJ-00-03-008", bold_font);
+            headerTable2.AddCell(cellHeaderBody2); */
+            cellHeaderBody2.Phrase = new Phrase("", bold_font);
             headerTable2.AddCell(cellHeaderBody2);
 
             cellHeader2.AddElement(headerTable2);
