@@ -63,13 +63,13 @@ namespace Com.Danliris.Service.Sales.Lib.PDFTemplates
             string titleString = "KONTRAK KERJA";
             bold_font.SetStyle(Font.UNDERLINE);
             Paragraph title = new Paragraph(titleString, bold_font) { Alignment = Element.ALIGN_CENTER };
-           // title.SpacingAfter = 20f;
+            //title.SpacingAfter = 20f;
             document.Add(title);
             bold_font.SetStyle(Font.NORMAL);
 
             //string codeNoString = "FM-00-PJ-02-001/R1";
             Paragraph scNo = new Paragraph(viewModel.SalesContractNo, bold_font) { Alignment = Element.ALIGN_CENTER };
-            scNo.SpacingAfter = 10f;
+            scNo.SpacingAfter = 20f;
             document.Add(scNo);
             #endregion
 
