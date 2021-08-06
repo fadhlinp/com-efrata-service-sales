@@ -160,5 +160,7 @@ namespace Com.Danliris.Service.Sales.Lib.Models.CostCalculationGarments
         public string RODistributionBy { get; set; }
 
         public bool IsPosted { get; set; }
+        public string SourceCode { get; set; }
+        public string SourceName { get; set; }
     }
 }

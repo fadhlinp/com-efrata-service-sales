@@ -91,6 +91,8 @@ namespace Com.Danliris.Service.Sales.Lib.ViewModels.CostCalculationGarment
         public string RODistributionBy { get; set; }
 
         public bool IsPosted { get; set; }
+        public string SourceCode { get; set; }
+        public string SourceName { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
